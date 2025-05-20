@@ -17,20 +17,36 @@
 // export default App;
 
 
-
-
-
 // SECONDO SNACK
 
-import useDate from "./components/useDate";
+// import useDate from "./components/useDate";
+
+// function App() {
+//   const currentDate = useDate();
+
+//   return (
+//     <div>
+//       <h1>Data e ora attuali:</h1>
+//       <p>{currentDate.toLocaleString()}</p>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+// TERZO SNACK
+
+import useCustomPointer from "./components/useCustomPointer";
 
 function App() {
-  const currentDate = useDate();
+  const customPointer = useCustomPointer("🔥");
 
   return (
     <div>
-      <h1>Data e ora attuali:</h1>
-      <p>{currentDate.toLocaleString()}</p>
+      <h1>Sposta il mouse per vedere il cursore personalizzato!</h1>
+      {customPointer}
     </div>
   );
 }
